@@ -411,7 +411,7 @@ Ptot = (ntot*R*T)/Vgas;
 klh2O = 1e-4 ; %Petric 2008
 Ps = 10^(22.443-(2795/(T))-(1.6798*log(T))); %Petric 2008
 
-dWvapdt = (klh2O/TM) * (Ps - Pwvap) - Qair*Wvap/(rhoair *Vgas*TM);
+dWvapdt = (klh2O/TM) * (Ps - Pwvap)- Qair*Wvap/(rhoair *Vgas*TM); % ;
 
 dWdt =(((Ymb_c_h)*v13+(Ymb_p_h)*v14+(Ymb_l_h)*v15+(Ytb_c_h)*v16+(Ytb_p_h)*v17+(Ytb_l_h)*v18+(Yma_c_h)*v19+(Yma_p_h)*v20+(Yma_l_h)*v21+...
     (Yma_h_h)*v22+(Yta_c_h)*v23+(Yta_p_h)*v24+(Yta_l_h)*v25+(Yta_h_h)*v26+(Ymf_c_h)*v27+(Ymf_p_h)*v28+(Ymf_l_h)*v29+...
