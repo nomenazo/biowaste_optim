@@ -411,11 +411,11 @@ Ptot = (ntot*R*T)/Vgas;
 klh2O = 1e-4 ; %Petric 2008
 Ps = 10^(22.443-(2795/(T))-(1.6798*log(T))); %Petric 2008
 
-dWvapdt = (klh2O/TM) * (Ps - Pwvap)- Qair*Wvap/(rhoair *Vgas*TM); % ;
+dWvapdt = (klh2O/TM) * (Ps - Pwvap)- 0.15 *Qair*Wvap/(rhoair *Vgas*TM); % ;
 
 dWdt =(((Ymb_c_h)*v13+(Ymb_p_h)*v14+(Ymb_l_h)*v15+(Ytb_c_h)*v16+(Ytb_p_h)*v17+(Ytb_l_h)*v18+(Yma_c_h)*v19+(Yma_p_h)*v20+(Yma_l_h)*v21+...
     (Yma_h_h)*v22+(Yta_c_h)*v23+(Yta_p_h)*v24+(Yta_l_h)*v25+(Yta_h_h)*v26+(Ymf_c_h)*v27+(Ymf_p_h)*v28+(Ymf_l_h)*v29+...
-    (Ymf_h_h)*v30+(Ymf_lg_h)*v31+(Ytf_c_h)*v32+(Ytf_p_h)*v33+(Ytf_l_h)*v34+(Ytf_h_h)*v35+(Ytf_lg_h)*v36)) - ((klh2O/TM) * (Ps - Pwvap) - Qair*Wvap/(rhoair *Vgas*TM))  + 2.25*Vmax*((CH4gen/W)/(km+(CH4gen/W)))*((O2diss/(W*32e-3))/(Kch4_O2+(O2diss/(W*32e-3)))); %Petric 2005 + 0.842*v45
+    (Ymf_h_h)*v30+(Ymf_lg_h)*v31+(Ytf_c_h)*v32+(Ytf_p_h)*v33+(Ytf_l_h)*v34+(Ytf_h_h)*v35+(Ytf_lg_h)*v36)) - (klh2O/TM) * (Ps - Pwvap)   + 2.25*Vmax*((CH4gen/W)/(km+(CH4gen/W)))*((O2diss/(W*32e-3))/(Kch4_O2+(O2diss/(W*32e-3)))); %- Qair*Wvap/(rhoair *Vgas*TM)); %Petric 2005 + 0.842*v45
 
 He =  4.39751e9;%Pa %
 

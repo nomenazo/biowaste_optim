@@ -4,7 +4,7 @@ clear;
 % -> IMPORT INITIAL VALUES FROM "waste characterization.xlsx"
 
 y0=[0.208470299 0.064311765 0.039781924 0.01422 0.035865102 0.031701992 0.013850399 0 0 0 0 0 5e-4 ...
-5e-4 1e-4 1e-4 1e-6 1e-6 0 0 0.6397 298 0 0 0 1e-4 0 0 0 0 0.00021 0 0.003 5e-2 0 0 0]; %aFinland+WC 8:1 :Industrial composting 293
+5e-4 1e-4 1e-4 1e-6 1e-6 0 0 0.6397 298 0 0 0 1e-4 0 0 0 0 0.00021 0 0.003 5e-2 0 0 0];
 
 %Assessment of 90 days of composting
 tspan(1)=0;
